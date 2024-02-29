@@ -2,9 +2,7 @@ import React from "react";
 import './App.css';
 import styled from "styled-components";
 import Colors from "./common/Color";
-import Header from "./component/Header";
 import Contents from "./component/Contents";
-import Footer from "./component/Footer";
 
 function App() {
 
@@ -17,24 +15,27 @@ function App() {
 
   return (
     <Container>
-      <Button onClick={handleScrollTop}>👆🏻</Button>
-      <Header />
-      <Contents />
-      <Footer />
+      <Wrapper>
+        <Contents />
+        <Button onClick={handleScrollTop}>👆🏻</Button>
+      </Wrapper>
     </Container>
   );
 }
 
 const Container = styled.div`
-  max-width : 100vw;
+  width : 100vw;
   display : flex;
   flex-direction : column;
   align-items : center;
   background-color : ${Colors.Home};
-  border : 2px solid red;
+`;
+const Wrapper = styled.div`
+  flex : 1;
+  margin : 0;
 `;
 const Button = styled.button` 
-  width : 3.8%;
+  width : 3.8vw;
   padding : 0.8%;
   position : fixed;
   bottom : 7%;

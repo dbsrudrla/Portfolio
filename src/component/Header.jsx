@@ -32,7 +32,7 @@ function Header() {
 };
 
 const Container = styled.div`
-    width : 100%;
+    width : 100vw;
     height : 10%;
     top : 0;
     right : 0;
@@ -70,16 +70,12 @@ const NavList = styled.li`
 const Button = styled.div`  
     font-weight : bold;
     font-size : 20px;
-    color : ${Colors.gray};
+    color : ${Colors.black2};
     font-family : 'BalooChettan';
     cursor : pointer;
     &:hover {
-        color : ${Colors.black};
+        color : ${Colors.Button};
     }
-    &:checked {
-        color : ${Colors.black};
-    }
-  
 `;
 
 export default Header;
