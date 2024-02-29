@@ -10,7 +10,6 @@ function Home() {
 }
 
 const Container = styled.div`
-  margin-top : 10%;
   text-align : center;
 `;
 

@@ -42,6 +42,7 @@ const Container = styled.div`
     justify-content : center;
     flex-wrap : wrap;
     box-shadow : 0 0 5px ${Colors.gray};
+    background-color : ${Colors.white}; 
 `;
 const Wrapper = styled.div`
     width : 80%;
@@ -58,26 +59,26 @@ const Title = styled.div`
 `;
 const List = styled.div`
     width : 45%;
-    margin-right : 5%;
     display : flex;
     justify-content : space-between;
-    list-style : none;
 `;
 const NavList = styled.li`
     width : 20%;
     text-align : center;
+    list-style : none;
 `;
-const Button = styled.div`
-    border : 0;
-    background : none;
+const Button = styled.div`  
     font-weight : bold;
     font-size : 20px;
     color : ${Colors.gray};
     font-family : 'BalooChettan';
     cursor : pointer;
     &:hover {
-    color : ${Colors.black};
-  }
+        color : ${Colors.black};
+    }
+    &:checked {
+        color : ${Colors.black};
+    }
   
 `;
 

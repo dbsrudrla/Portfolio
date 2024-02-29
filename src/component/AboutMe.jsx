@@ -1,7 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function AboutMe() {
-  return <div>about me 페이지</div>;
+  return (
+    <>
+      <Container>어바웃 미 페이지</Container>
+    </>
+  );
 }
+
+const Container = styled.div`
+  text-align : center;
+`;
 
 export default AboutMe;
