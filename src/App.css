@@ -1,6 +1,9 @@
 @font-face {
     font-family: BalooChettan;
     src: url(./common/fonts/BalooChettan2-VariableFont.woff);
+
+    font-family: NotoSans;
+    src: url(./common/fonts/NotoSansKR-VariableFont_wght.woff);
 }
 
 

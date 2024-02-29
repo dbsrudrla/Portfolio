@@ -9,7 +9,8 @@ function Header() {
         if (e.target.classList.contains("menu-item")) {
             const id = e.target.getAttribute("href"); // id와 같은 이름을 가진 화면 가져오기
             document.querySelector(id).scrollIntoView({
-                behavior: "smooth", // 부드럽게 넘기기
+                block : 'center',
+                behavior: 'smooth', // 부드럽게 넘기기
             });
         }
   };

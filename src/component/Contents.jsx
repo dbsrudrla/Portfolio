@@ -25,10 +25,8 @@ function Contents() {
 
 const Container = styled.div`
   width: 100vw;
-  margin-bottom : 0;
   display: flex;
   flex-direction: column;
-  margin-top : 10%;
   overflow-x : hidden;
 `;
 const ContentsWrapper = styled.div`

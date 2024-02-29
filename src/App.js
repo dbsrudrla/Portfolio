@@ -15,10 +15,8 @@ function App() {
 
   return (
     <Container>
-      <Wrapper>
-        <Contents />
-        <Button onClick={handleScrollTop}>👆🏻</Button>
-      </Wrapper>
+      <Contents />
+      <Button onClick={handleScrollTop}>👆🏻</Button>
     </Container>
   );
 }
@@ -30,22 +28,17 @@ const Container = styled.div`
   align-items : center;
   background-color : ${Colors.Home};
 `;
-const Wrapper = styled.div`
-  flex : 1;
-  margin : 0;
-`;
-const Button = styled.button` 
-  width : 3.8vw;
+const Button = styled.div` 
   padding : 0.8%;
   position : fixed;
   bottom : 7%;
   right : 5%;
-  font-size : 25px;
+  font-size : 20px;
   color : ${Colors.white};
   z-index : 1000;
-  border : none;
-  border-radius : 100%;
+  border-radius : 20%;
   background-color : ${Colors.Button};
+  cursor: pointer;
 `;
 
 export default App;
