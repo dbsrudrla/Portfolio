@@ -31,7 +31,6 @@ const Container = styled.div`
 `;
 const ContentsWrapper = styled.div`
   width : 100vw;
-  height: 90vh;
   background-color: ${(props) => (props.bgColor ? props.bgColor : '#FFFFFF')};
 `;
 
