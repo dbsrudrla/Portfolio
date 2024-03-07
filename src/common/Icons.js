@@ -6,6 +6,7 @@ const Icons = {
     github : <FaGithub size='80%'/>,
     velog : <SiVelog size='70%'/>,
     instagram : <FaInstagram size='80%'/>, 
+
 }
 
 export default Icons;

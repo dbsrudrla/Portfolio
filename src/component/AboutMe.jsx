@@ -44,38 +44,36 @@ function AboutMe() {
 }
 
 const Container = styled.div`
-  width : 100vw;
-  height : 60vh;
-  display : flex;
-  margin: 6% 0;
-  padding : auto;
+  width : 100%;
+  box-sizing : border-box;
+  padding : 5% 0;
 `;
 const Wrapper = styled.div`
   width : 70%;
   margin : 0 auto;
   display : flex;
   flex-direction : column;
-  justify-content : center;
   align-items : center;
 `;
-const TextList = styled.div`
-  width : 70%;
-`;
 const TitleContainer = styled.div`
-  width : 20%;
+  width : 100%;
   display : flex;
   flex-direction : column;
 `;
 const Title = styled.div`
   margin-bottom : 3%;
   text-align : center;
-  font-size : 30px;
-  font-weight : bold;
+  font-size : 2rem;
+  font-weight : 700;
   font-family : 'BalooChettan';
 `;
 const Line = styled.div`
-  margin : 5%;
+  width : 20%;
+  margin : 0 auto;
   border-bottom : 2px solid ${Colors.black};
+`;
+const TextList = styled.div`
+  width : 70%;
 `;
 const InfoList = styled.div`
   width : 90%;
@@ -91,13 +89,13 @@ const InfoContainer = styled.div`
 `;
 const InfoTitle = styled.div`
   margin-bottom : 3%;
-  font-size : 23px;
+  font-size : 1.4rem;
   font-weight : bold;
   font-family : 'BalooChettan';
 `;
 const Info = styled.div`
   margin-top : 1%;
-  font-size : 18px;
+  font-size : 1.1rem;
   font-weight : 200;
   font-family : 'NotoSans';
 `;

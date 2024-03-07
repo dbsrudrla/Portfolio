@@ -24,13 +24,10 @@ function Contents() {
 };
 
 const Container = styled.div`
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  overflow-x : hidden;
+  display: block;
 `;
 const ContentsWrapper = styled.div`
-  width : 100vw;
+  width : 100%;
   background-color: ${(props) => (props.bgColor ? props.bgColor : '#FFFFFF')};
 `;
 
