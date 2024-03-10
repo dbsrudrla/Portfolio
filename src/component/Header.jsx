@@ -8,11 +8,10 @@ function Header() {
         e.preventDefault(); // 버튼을 눌러도 새로고침되지 않도록 방지하는 역할
         if (e.target.classList.contains("menu-item")) {
             const id = e.target.getAttribute("href"); // id와 같은 이름을 가진 화면 가져오기
-            document.querySelector(id).scrollIntoView({
-                behavior: "smooth", // 부드럽게 넘기기
-            });
+            const location = document.querySelector(id).offsetTop;
+            window.scrollTo({top : location - 67, behavior : 'smooth'});
         }
-  };
+    };
 
   return (
     <div>
@@ -32,7 +31,7 @@ function Header() {
 };
 
 const Container = styled.div`
-    width : 100%;
+    width : 100vw;
     height : 10%;
     top : 0;
     right : 0;
@@ -41,7 +40,7 @@ const Container = styled.div`
     display : flex;
     justify-content : center;
     flex-wrap : wrap;
-    box-shadow : 0 0 5px ${Colors.gray};
+    box-shadow : 0 0 5px ${Colors.Shadow};
     background-color : ${Colors.white}; 
 `;
 const Wrapper = styled.div`
@@ -54,13 +53,13 @@ const Wrapper = styled.div`
 const Title = styled.div`
     text-align : center;
     font-weight : bold;
-    font-size : 23px;
+    font-size : 1.5rem;
     font-family : 'BalooChettan';
 `;
 const List = styled.div`
     width : 45%;
     display : flex;
-    justify-content : space-between;
+    justify-content : space-around;
 `;
 const NavList = styled.li`
     width : 20%;
@@ -69,17 +68,13 @@ const NavList = styled.li`
 `;
 const Button = styled.div`  
     font-weight : bold;
-    font-size : 20px;
-    color : ${Colors.gray};
+    font-size : 1.2rem;
+    color : ${Colors.black2};
     font-family : 'BalooChettan';
     cursor : pointer;
     &:hover {
-        color : ${Colors.black};
+        color : ${Colors.Button};
     }
-    &:checked {
-        color : ${Colors.black};
-    }
-  
 `;
 
 export default Header;
