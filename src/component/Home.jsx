@@ -66,7 +66,7 @@ const Image = styled.div`
   width : 200px;
   height : 230px;
   border-radius : 5%;
-  box-shadow: -5px 5px 10px ${Colors.gray};
+  box-shadow: -5px 5px 10px ${Colors.Shadow};
   background-color : ${Colors.white};
   &:hover {
     transform: translateY(-30px);

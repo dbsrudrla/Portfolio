@@ -99,6 +99,7 @@ const Skill = styled.div`
   margin-top : 10%;
   border-radius : 1rem;
   background-color : ${Colors.white};
+  box-shadow: -10px 10px 8px 0 ${Colors.Shadow};
 `;
 const SkillTitle = styled.div`
   margin-bottom : 3%;

@@ -40,7 +40,7 @@ const Container = styled.div`
     display : flex;
     justify-content : center;
     flex-wrap : wrap;
-    box-shadow : 0 0 5px ${Colors.gray};
+    box-shadow : 0 0 5px ${Colors.Shadow};
     background-color : ${Colors.white}; 
 `;
 const Wrapper = styled.div`

@@ -1,6 +1,7 @@
 const Colors = {
     Home : '#FFDADA',
     Button : '#FF986C',
+    Shadow : 'rgb(0, 0, 0, 0.25)',
     gray : '#BBBBBB',
     black : '#000000',
     black2 : '#222222',
