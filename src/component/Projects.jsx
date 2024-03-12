@@ -100,7 +100,7 @@ function Projects() {
                   <Info>디자인 리드</Info>
                   <InfoTitle>사용 기술</InfoTitle>
                   <Info>Frontend : React Native</Info>
-                  <Info>Backend : Node Js, express, MySQL</Info>
+                  <Info>Backend : Node.Js, express, MySQL</Info>
                   <Info>etc. : JWT 인증, expo</Info>
                 </ProjectInfo>
               </ProjectWrapper>
@@ -127,7 +127,7 @@ const TitleContainer = styled.div`
   flex-direction : column;
 `;
 const Title = styled.div`
-  margin-bottom : 3%;
+  margin-bottom : 2%;
   text-align : center;
   font-size : 2rem;
   font-weight : 700;
@@ -146,6 +146,7 @@ const Section = styled.div`
 const ProjectContatiner = styled.div`
   width : 95%;
   text-align : center;
+  margin : 0 auto;
 `;
 const ProjectWrapper = styled.div`
   width : 100%;
@@ -155,7 +156,7 @@ const ProjectWrapper = styled.div`
   box-sizing : border-box;
   margin-top : 5%;
   border-radius : 1rem;
-  background-color : ${Colors.white};
+  background-color : ${Colors.block};
   box-shadow: -10px 10px 8px 0 ${Colors.Shadow};
 `;
 const Project = styled.div`
@@ -193,12 +194,13 @@ const InfoTitle = styled.div`
   margin-bottom : 5%;
   font-size : 1.2rem;
   font-weight : 700;
-  font-family : 'BalooChettan';
+  font-family : 'NotoSans';
 `;
 const Info = styled.div`
-  margin-bottom : 4%;
-  font-size : 1rem;
-  font-family : 'BalooChettan';
+  margin-bottom : 5%;
+  font-size : 1.1rem;
+  font-weight : 300;
+  font-family : 'NotoSans';
 `;
 
 export default Projects;

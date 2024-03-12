@@ -38,7 +38,7 @@ function Home() {
             </TextList>
           </Section>
           <Section>
-            <Button onClick={MoreButton}>More</Button>
+            <Button onClick={MoreButton}>MORE</Button>
           </Section>  
         </Wrapper>
       </Container>
@@ -63,11 +63,11 @@ const Section = styled.div`
   justify-content : center;
 `;
 const Image = styled.div`
-  width : 200px;
+  width : 20%;
   height : 230px;
-  border-radius : 5%;
+  border-radius : 10%;
   box-shadow: -5px 5px 10px ${Colors.Shadow};
-  background-color : ${Colors.white};
+  background-color : ${Colors.block};
   &:hover {
     transform: translateY(-30px);
   };
@@ -81,16 +81,16 @@ const Title = styled.div`
   margin-bottom : 3%;
   font-size : 2rem;
   font-weight : 700;
-  font-family : 'NotoSans';
+  font-family : 'BalooChettan';
 `;
 const Info = styled.div`
   margin-top : 2%;
   font-size : 1.2rem;
-  font-family : 'NotoSans';
+  font-family : 'BalooChettan';
 `;
 const Text = styled.text`
   font-weight : 500;
-  color : ${Colors.red};
+  color : ${Colors.Button};
 `;
 const Button = styled.div`
   width : 10%;

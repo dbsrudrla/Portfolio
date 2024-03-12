@@ -73,10 +73,11 @@ const TitleContainer = styled.div`
   flex-direction : column;
 `;
 const Title = styled.div`
-  margin-bottom : 3%;
+  margin-bottom : 2%;
   text-align : center;
   font-size : 2rem;
   font-weight : 700;
+  color : ${Colors.black};
   font-family : 'BalooChettan';
 `;
 const Line = styled.div`
@@ -98,7 +99,7 @@ const Skill = styled.div`
   box-sizing : border-box;
   margin-top : 10%;
   border-radius : 1rem;
-  background-color : ${Colors.white};
+  background-color : ${Colors.block};
   box-shadow: -10px 10px 8px 0 ${Colors.Shadow};
 `;
 const SkillTitle = styled.div`

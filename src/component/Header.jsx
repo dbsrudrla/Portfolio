@@ -40,8 +40,8 @@ const Container = styled.div`
     display : flex;
     justify-content : center;
     flex-wrap : wrap;
-    box-shadow : 0 0 5px ${Colors.Shadow};
-    background-color : ${Colors.white}; 
+    box-shadow : 0 0 7px ${Colors.Shadow};
+    background-color : ${Colors.block}; 
 `;
 const Wrapper = styled.div`
     width : 80%;
@@ -62,14 +62,14 @@ const List = styled.div`
     justify-content : space-around;
 `;
 const NavList = styled.li`
-    width : 20%;
+    width : 100%;
     text-align : center;
     list-style : none;
 `;
 const Button = styled.div`  
     font-weight : bold;
     font-size : 1.2rem;
-    color : ${Colors.black2};
+    color : ${Colors.black};
     font-family : 'BalooChettan';
     cursor : pointer;
     &:hover {

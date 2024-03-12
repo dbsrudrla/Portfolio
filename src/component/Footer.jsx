@@ -20,11 +20,11 @@ function Footer() {
 };
 
 const Container = styled.div`
-    width : 100vw;
+    width : 100%;
     display : flex;
     justify-content : center;
     flex-wrap : wrap;
-    background-color : ${Colors.black2};
+    background-color : ${Colors.black};
 `;
 const Wrapper = styled.div`
     width : 50%;
@@ -45,14 +45,14 @@ const Button = styled.div`
     display : flex;
     align-items : center;
     justify-content : center;
-    color : ${Colors.white};
+    color : ${Colors.block};
     cursor : pointer;
 `;
 const Caption = styled.div`
     text-align : center;
     font-size : 15px;
     font-family : 'BalooChettan';
-    color : ${Colors.white};
+    color : ${Colors.block};
 `;
 
 export default Footer;
