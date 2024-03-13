@@ -1,10 +1,11 @@
 const Colors = {
-    Home : '#FFDADA',
-    Button : '#FF986C',
-    Shadow : 'rgb(0, 0, 0, 0.25)',
+    yellow1 : '#FFF3DA',
+    yellow2 : '#FFEECC',
+    pink : '#FFEADD',
+    button : '#FF986C',
+    shadow : 'rgb(0, 0, 0, 0.25)',
     black : '#222222',
-    white : '#F8F6F6',
-    block : '#FFFFFF',
+    white : '#FFFFFF',
 }
 
 export default Colors;

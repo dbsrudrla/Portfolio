@@ -99,15 +99,15 @@ const Skill = styled.div`
   box-sizing : border-box;
   margin-top : 10%;
   border-radius : 1rem;
-  background-color : ${Colors.block};
-  box-shadow: -10px 10px 8px 0 ${Colors.Shadow};
+  background-color : ${Colors.white};
+  box-shadow: -10px 10px 8px 0 ${Colors.shadow};
 `;
 const SkillTitle = styled.div`
   margin-bottom : 3%;
   font-size : 1.5rem;
   font-weight : 700;
   font-family : 'BalooChettan';
-  color : ${Colors.Button};
+  color : ${Colors.button};
 `;
 const Image = styled.img`
   width : 70%;

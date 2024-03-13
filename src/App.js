@@ -36,7 +36,7 @@ const Button = styled.div`
   color : ${Colors.white};
   z-index : 1000;
   border-radius : 50%;
-  border : 3px dashed ${Colors.Button};
+  border : 3px dashed ${Colors.button};
   cursor: pointer;
 `;
 

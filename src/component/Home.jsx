@@ -66,8 +66,8 @@ const Image = styled.div`
   width : 20%;
   height : 230px;
   border-radius : 10%;
-  box-shadow: -5px 5px 10px ${Colors.Shadow};
-  background-color : ${Colors.block};
+  box-shadow: -5px 5px 10px ${Colors.shadow};
+  background-color : ${Colors.white};
   &:hover {
     transform: translateY(-30px);
   };
@@ -90,7 +90,7 @@ const Info = styled.div`
 `;
 const Text = styled.text`
   font-weight : 500;
-  color : ${Colors.Button};
+  color : ${Colors.button};
 `;
 const Button = styled.div`
   width : 10%;
@@ -101,7 +101,7 @@ const Button = styled.div`
   font-size : 1.2rem;
   font-weight : 700;
   font-family : 'BalooChettan';
-  background-color : ${Colors.Button};
+  background-color : ${Colors.button};
   cursor : pointer;
 `;
 

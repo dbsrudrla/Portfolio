@@ -13,11 +13,11 @@ function Contents() {
   return (
     <Container>
       <Header />
-      <ContentsWrapper id="home" bgColor='#FFDADA'><Home /></ContentsWrapper>
+      <ContentsWrapper id="home" bgColor='#FFF3DA'><Home /></ContentsWrapper>
       <ContentsWrapper id="aboutMe"><AboutMe /></ContentsWrapper>
-      <ContentsWrapper id="skills" bgColor='#FFE6A6'><Skills /></ContentsWrapper>
-      <ContentsWrapper id="projects" bgColor='#F8F6F6'><Projects /></ContentsWrapper>
-      <ContentsWrapper id="career" bgColor='#FFE6A6'><Career /></ContentsWrapper>
+      <ContentsWrapper id="skills" bgColor='#FFEECC'><Skills /></ContentsWrapper>
+      <ContentsWrapper id="projects" bgColor='#FFEADD'><Projects /></ContentsWrapper>
+      <ContentsWrapper id="career"><Career /></ContentsWrapper>
       <Footer />
     </Container>
   )

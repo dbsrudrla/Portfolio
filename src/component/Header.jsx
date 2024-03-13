@@ -40,8 +40,8 @@ const Container = styled.div`
     display : flex;
     justify-content : center;
     flex-wrap : wrap;
-    box-shadow : 0 0 7px ${Colors.Shadow};
-    background-color : ${Colors.block}; 
+    box-shadow : 0 0 7px ${Colors.shadow};
+    background-color : ${Colors.white}; 
 `;
 const Wrapper = styled.div`
     width : 80%;
@@ -73,7 +73,7 @@ const Button = styled.div`
     font-family : 'BalooChettan';
     cursor : pointer;
     &:hover {
-        color : ${Colors.Button};
+        color : ${Colors.button};
     }
 `;
 

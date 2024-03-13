@@ -156,8 +156,8 @@ const ProjectWrapper = styled.div`
   box-sizing : border-box;
   margin-top : 5%;
   border-radius : 1rem;
-  background-color : ${Colors.block};
-  box-shadow: -10px 10px 8px 0 ${Colors.Shadow};
+  background-color : ${Colors.white};
+  box-shadow: -10px 10px 8px 0 ${Colors.shadow};
 `;
 const Project = styled.div`
   width : 30%;

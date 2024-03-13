@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     flex-wrap : inherit;
 `;
 const List = styled.div`
-    width : 30%;
+    width : 25%;
     margin : auto;
     margin-bottom : 2%;
     display : flex;
@@ -45,14 +45,14 @@ const Button = styled.div`
     display : flex;
     align-items : center;
     justify-content : center;
-    color : ${Colors.block};
+    color : ${Colors.white};
     cursor : pointer;
 `;
 const Caption = styled.div`
     text-align : center;
     font-size : 15px;
     font-family : 'BalooChettan';
-    color : ${Colors.block};
+    color : ${Colors.white};
 `;
 
 export default Footer;

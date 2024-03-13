@@ -27,12 +27,12 @@ function AboutMe() {
             <InfoList>
               <InfoContainer>
                 <InfoTitle>Github</InfoTitle>
-                <Info style={{marginBottom : '3%',}}><text style={{color : Colors.Button, fontWeight : 400,}}>소스코드 저장소</text>입니다.</Info>
+                <Info style={{marginBottom : '3%',}}><text style={{color : Colors.button, fontWeight : 400,}}>소스코드 저장소</text>입니다.</Info>
                 <Info onClick={() => window.open('https://github.com/dbsrudrla')} style={{cursor : 'pointer'}}>https://github.com/dbsrudrla</Info>
               </InfoContainer>
               <InfoContainer>
                 <InfoTitle>Velog</InfoTitle>
-                <Info style={{marginBottom : '3%',}}><text  style={{color : Colors.Button, fontWeight : 400,}}>개발 공부</text>하면서 작성한 블로그입니다.</Info>
+                <Info style={{marginBottom : '3%',}}><text  style={{color : Colors.button, fontWeight : 400,}}>개발 공부</text>하면서 작성한 블로그입니다.</Info>
                 <Info onClick={() => window.open('https://velog.io/@rlddidrod')} style={{cursor : 'pointer'}}>https://velog.io/@rlddidrod</Info>
               </InfoContainer>
             </InfoList>
