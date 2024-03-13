@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Colors from '../common/Color';
+import { FaUnderline } from 'react-icons/fa';
 
 function Home() {
 
@@ -16,24 +17,20 @@ function Home() {
           <Section>
             <Image></Image>
             <TextList>
-              <Title>김윤경</Title>
-              <Info>
-                안녕하세요!
+              <InfoTitle>
+                <text style={{fontSize : '2.2rem'}}>꾸미기</text>와 <text style={{fontSize : '2.2rem'}}>꼼꼼함</text>을 좋아하는
+              </InfoTitle>
+              <InfoTitle>
+                주니어 개발자 <text style={{color : Colors.button, fontSize : '2.2rem',}}>김윤경</text>입니다.
+              </InfoTitle>
+              <Info style={{marginTop : '5%',}}>
+                프론트엔드 개발자를 꿈꾸고 있습니다.
               </Info>
               <Info>
-                <Text>주니어 개발자</Text> 김윤경입니다.
+                웹뿐만 아니라 UX / UI 앱 디자인한 경험이 있습니다.
               </Info>
               <Info>
-                이중전공 수업 중 웹 프로그래밍 수업을 통해서 코딩에 처음 발을 들이게 되었는데,
-              </Info>
-              <Info>
-                점차 코딩에 흥미가 생겨 <Text>프론트엔드 개발자</Text>를 꿈꾸게 되었습니다.
-              </Info>
-              <Info>
-                저는 <Text>웹 디자인</Text> 뿐만 아니라 <Text>UX/UI 디자인</Text>도 해 본 경험이 있습니다.
-              </Info>
-              <Info>
-                <Text>꼼꼼</Text>하고, <Text>성실</Text>하게 일에 임하는 것이 저의 가장 큰 장점입니다.
+                성실하고, 행복하게 일에 임하는 것이 저의 가장 큰 장점입니다.
               </Info>
             </TextList>
           </Section>
@@ -69,7 +66,7 @@ const Image = styled.div`
   box-shadow: -5px 5px 10px ${Colors.shadow};
   background-color : ${Colors.white};
   &:hover {
-    transform: translateY(-30px);
+    transform: translateY(-15px);
   };
   cursor : pointer;
 `;
@@ -77,31 +74,31 @@ const TextList = styled.div`
   width : 55%;
   margin-left : 5%;
 `;
-const Title = styled.div`
+const InfoTitle = styled.div`
   margin-bottom : 3%;
-  font-size : 2rem;
-  font-weight : 700;
-  font-family : 'BalooChettan';
+  font-size : 1.8rem;
+  font-weight : 600;
+  font-family : 'NotoSans';
 `;
 const Info = styled.div`
   margin-top : 2%;
   font-size : 1.2rem;
-  font-family : 'BalooChettan';
-`;
-const Text = styled.text`
-  font-weight : 500;
-  color : ${Colors.button};
+  font-weight : 300;
+  font-family : 'NotoSans';
 `;
 const Button = styled.div`
   width : 10%;
   margin : 2%;
   padding : 1% 0;
   border-radius : 2rem;
+  border : 2px dashed ${Colors.button};
   text-align : center;
   font-size : 1.2rem;
   font-weight : 700;
   font-family : 'BalooChettan';
-  background-color : ${Colors.button};
+  &:hover {
+    background-color : ${Colors.button};
+  };
   cursor : pointer;
 `;
 

@@ -16,7 +16,7 @@ function App() {
   return (
     <Container>
       <Contents />
-      <Button onClick={handleScrollTop}>👆🏻</Button>
+      <Button onClick={handleScrollTop}>{'🔝'}</Button>
     </Container>
   );
 }
@@ -33,10 +33,9 @@ const Button = styled.div`
   bottom : 7%;
   right : 5%;
   font-size : 20px;
-  color : ${Colors.white};
   z-index : 1000;
   border-radius : 50%;
-  border : 3px dashed ${Colors.button};
+  background-color : ${Colors.white};
   cursor: pointer;
 `;
 

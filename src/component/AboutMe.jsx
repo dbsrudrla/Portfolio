@@ -9,7 +9,7 @@ function AboutMe() {
         <Wrapper>
           {/* 제목 */}
           <TitleContainer>
-            <Title>About Me</Title>
+            <Title>About me</Title>
             <Line/>
           </TitleContainer>
           {/* 내용 */}
@@ -22,7 +22,7 @@ function AboutMe() {
             </InfoList>
             <InfoList>
               <InfoContainer><InfoTitle>Email address</InfoTitle><Info>rladbsrud011120@naver.com</Info></InfoContainer>
-              <InfoContainer><InfoTitle>Major</InfoTitle><Info>중국학전공 / 디지털경영전공</Info><Info>(고려대학교 세종캠퍼스)</Info></InfoContainer>
+              <InfoContainer><InfoTitle>Major</InfoTitle><Info style={{marginBottom : '3%'}}>중국학전공 / 디지털경영전공</Info><Info>(고려대학교 세종캠퍼스)</Info></InfoContainer>
             </InfoList>
             <InfoList>
               <InfoContainer>
@@ -73,7 +73,8 @@ const Line = styled.div`
   border-bottom : 2px solid ${Colors.black};
 `;
 const TextList = styled.div`
-  width : 60%;
+  width : 63%;
+  margin-top : 5%;
 `;
 const InfoList = styled.div`
   width : 100%;
@@ -85,16 +86,15 @@ const InfoList = styled.div`
 `;
 const InfoContainer = styled.div`
   width : 100%;
-  margin : 5% 0;
+  margin-bottom : 7%;
 `;
 const InfoTitle = styled.div`
-  margin-bottom : 3%;
+  margin-bottom : 5%;
   font-size : 1.4rem;
   font-weight : bold;
   font-family : 'BalooChettan';
 `;
 const Info = styled.div`
-  margin-top : 1%;
   font-size : 1.1rem;
   font-weight : 200;
   font-family : 'NotoSans';
