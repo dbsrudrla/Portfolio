@@ -19,7 +19,7 @@ function Career() {
                 <CareerTitle>Activity</CareerTitle>
                 <InfoTitle><text style={{color : Colors.button}}>멋쟁이사자처럼</text> 11기 수료</InfoTitle>
                 <Info>대학 창업 & 개발 IT 동아리</Info>
-                <Info>2023.03 - 2023.12</Info>
+                <Info style={{marginBottom : 0,}}>2023.03 - 2023.12</Info>
               </Careers>
             </CareerContainer>
             <CareerContainer>
@@ -27,7 +27,7 @@ function Career() {
                 <CareerTitle>Awards</CareerTitle>
                 <InfoTitle>해커톤 <text style={{color : Colors.button}}>대상</text> 수상</InfoTitle>
                 <Info>2023 SW융합클러스터 2.0 디지털콘텐츠 DX 해커톤</Info>
-                <Info>2023.09.23</Info>
+                <Info style={{marginBottom : 0,}}>2023.09.23</Info>
               </Careers>
             </CareerContainer>
           </Section>
@@ -68,7 +68,7 @@ const Section = styled.div`
   justify-content : space-around;
 `;
 const CareerContainer = styled.div`
-  width : 45%;
+  width : 40%;
   text-align : center;
 `;
 const Careers = styled.div`
@@ -76,7 +76,7 @@ const Careers = styled.div`
   padding : 8%;
   box-sizing : border-box;
   margin-top : 10%;
-  border-radius : 1rem;
+  border-radius : 1.5rem;
   border : 5px solid ${Colors.yellow2};
   background-color : ${Colors.white};
 `;

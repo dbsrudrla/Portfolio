@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Colors from '../common/Color';
-import { FaUnderline } from 'react-icons/fa';
 
 function Home() {
 

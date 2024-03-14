@@ -17,38 +17,35 @@ function Skills() {
           <Section>
             <SkillContainer>
               <Skill>
-                <SkillTitle>Frontend</SkillTitle>
-                <Image src={Images.frontend}/>
-                <Image src={Images.react}/>
+                <SkillTitle>Strong</SkillTitle>
+                <Image src={Images.frontend} style={{width : '60%',}}/>
+                <Image src={Images.react} style={{width : '60%',}}/>
+                <Image src={Images.reactNative} style={{width : '75%',}}/>
               </Skill>
             </SkillContainer>
             <SkillContainer>
               <Skill>
-                <SkillTitle>Mobile App</SkillTitle>
-                <Image src={Images.reactNative}/>
-              </Skill>
-              <Skill>
-                <SkillTitle>Learned</SkillTitle>
+                <SkillTitle>Experienced</SkillTitle>
+                <Image src={Images.figma} style={{width : '60%',}}/>
+                <Image src={Images.notion} style={{width : '60%',}}/>
                 <Row>
-                  <Image src={Images.python} style={{width : '45%',}}/>
-                  <Image src={Images.mysql} style={{width : '45%',}}/>
+                  <Image src={Images.slack}/>
+                  <Image src={Images.space}/>
+                </Row>
+                <Image src={Images.github}/>
+              </Skill>
+            </SkillContainer>
+            <SkillContainer>
+              <Skill>
+                <SkillTitle>Knowledgeable</SkillTitle>
+                <Row>
+                  <Image src={Images.python}/>
+                  <Image src={Images.mysql} style={{width : '50%',}}/>
                 </Row>
               </Skill>
               <Skill>
                 <SkillTitle>Certification</SkillTitle>
                 <Image src={Images.Certification} style={{width : '50%',}}/>
-              </Skill>
-            </SkillContainer>
-            <SkillContainer>
-              <Skill>
-                <SkillTitle>etc.</SkillTitle>
-                <Image src={Images.figma}/>
-                <Image src={Images.notion}/>
-                <Row>
-                  <Image src={Images.slack} style={{width : '45%',}}/>
-                  <Image src={Images.space} style={{width : '45%',}}/>
-                </Row>
-                <Image src={Images.github}/>
               </Skill>
             </SkillContainer>
           </Section>
@@ -64,7 +61,7 @@ const Container = styled.div`
   padding : 5% 0;
 `;
 const Wrapper = styled.div`
-  width : 80%;
+  width : 75%;
   margin : 0 auto;
 `;
 const TitleContainer = styled.div`
@@ -77,7 +74,6 @@ const Title = styled.div`
   text-align : center;
   font-size : 2rem;
   font-weight : 700;
-  color : ${Colors.black};
   font-family : 'BalooChettan';
 `;
 const Line = styled.div`
@@ -90,15 +86,15 @@ const Section = styled.div`
   justify-content : space-around;
 `;
 const SkillContainer = styled.div`
-  width : 28%;
+  width : 30%;
   text-align : center;
 `;
 const Skill = styled.div`
   width : 100%;
-  padding : 8%;
+  padding : 7%;
   box-sizing : border-box;
-  margin-top : 10%;
-  border-radius : 1rem;
+  margin-top : 15%;
+  border-radius : 1.5rem;
   background-color : ${Colors.white};
   box-shadow: -10px 10px 8px 0 ${Colors.shadow};
 `;
@@ -110,8 +106,8 @@ const SkillTitle = styled.div`
   color : ${Colors.button};
 `;
 const Image = styled.img`
-  width : 70%;
-  margin-top : 5%;
+  width : 35%;
+  margin : 5%;
 `;
 const Row = styled.div`
   width : 70%;

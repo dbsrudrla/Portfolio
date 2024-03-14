@@ -74,7 +74,7 @@ const Line = styled.div`
 `;
 const TextList = styled.div`
   width : 63%;
-  margin-top : 5%;
+  margin-top : 7%;
 `;
 const InfoList = styled.div`
   width : 100%;
@@ -86,16 +86,16 @@ const InfoList = styled.div`
 `;
 const InfoContainer = styled.div`
   width : 100%;
-  margin-bottom : 7%;
+  margin-bottom : 8%;
 `;
 const InfoTitle = styled.div`
   margin-bottom : 5%;
   font-size : 1.4rem;
-  font-weight : bold;
+  font-weight : 700;
   font-family : 'BalooChettan';
 `;
 const Info = styled.div`
-  font-size : 1.1rem;
+  font-size : 1.2rem;
   font-weight : 200;
   font-family : 'NotoSans';
 `;
