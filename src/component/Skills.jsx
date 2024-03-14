@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Colors from '../common/Color';
-import Images from '../common/\bImages';
+import Images from '../common/Images';
 
 function Skills() {
   return (
