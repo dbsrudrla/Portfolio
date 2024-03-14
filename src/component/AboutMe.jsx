@@ -66,6 +66,9 @@ const Title = styled.div`
   font-size : 2rem;
   font-weight : 700;
   font-family : 'BalooChettan';
+  @media screen and (max-width : 768px) {
+    font-size : 1.5rem;
+  }
 `;
 const Line = styled.div`
   width : 20%;
@@ -75,6 +78,9 @@ const Line = styled.div`
 const TextList = styled.div`
   width : 63%;
   margin-top : 7%;
+  @media screen and (max-width : 1000px) {
+    width : 100%;
+  }
 `;
 const InfoList = styled.div`
   width : 100%;
@@ -83,6 +89,10 @@ const InfoList = styled.div`
   flex-direction : row;
   justify-content : space-around;
   align-items : center;
+  @media screen and (max-width : 500px) {
+    flex-direction : column;
+    text-align : center;
+  }
 `;
 const InfoContainer = styled.div`
   width : 100%;
@@ -93,11 +103,17 @@ const InfoTitle = styled.div`
   font-size : 1.4rem;
   font-weight : 700;
   font-family : 'BalooChettan';
+  @media screen and (max-width : 768px) {
+    font-size : 1.2rem;
+  }
 `;
 const Info = styled.div`
   font-size : 1.2rem;
   font-weight : 200;
   font-family : 'NotoSans';
+  @media screen and (max-width : 768px) {
+    font-size : 0.95rem;
+  }
 `;
 
 export default AboutMe;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import Home from "./Home";
@@ -10,9 +10,12 @@ import Footer from "./Footer";
 
 
 function Contents() {
+  // 반응형 웹 헤더
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
+
   return (
     <Container>
-      <Header />
+      <Header isToggleOpen={isToggleOpen} setIsToggleOpen={setIsToggleOpen}/>
       <ContentsWrapper id="home" bgColor='#FFF3DA'><Home /></ContentsWrapper>
       <ContentsWrapper id="aboutMe"><AboutMe /></ContentsWrapper>
       <ContentsWrapper id="skills" bgColor='#FFEECC'><Skills /></ContentsWrapper>

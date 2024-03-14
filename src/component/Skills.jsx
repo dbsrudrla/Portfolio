@@ -18,34 +18,34 @@ function Skills() {
             <SkillContainer>
               <Skill>
                 <SkillTitle>Strong</SkillTitle>
-                <Image src={Images.frontend} style={{width : '60%',}}/>
-                <Image src={Images.react} style={{width : '60%',}}/>
-                <Image src={Images.reactNative} style={{width : '75%',}}/>
+                <Image src={Images.frontend} ImgSize = '60%' ImgSize2 = '30%'/>
+                <Image src={Images.react} ImgSize = '60%' ImgSize2 = '30%'/>
+                <Image src={Images.reactNative} ImgSize = '75%' ImgSize2 = '50%'/>
               </Skill>
             </SkillContainer>
             <SkillContainer>
               <Skill>
                 <SkillTitle>Experienced</SkillTitle>
-                <Image src={Images.figma} style={{width : '60%',}}/>
-                <Image src={Images.notion} style={{width : '60%',}}/>
+                <Image src={Images.figma} ImgSize = '60%' ImgSize2 = '30%'/>
+                <Image src={Images.notion} ImgSize = '60%' ImgSize2 = '30%'/>
                 <Row>
-                  <Image src={Images.slack}/>
-                  <Image src={Images.space}/>
+                  <Image src={Images.slack} ImgSize = '35%' ImgSize2 = '25%'/>
+                  <Image src={Images.space} ImgSize = '35%' ImgSize2 = '25%'/>
                 </Row>
-                <Image src={Images.github}/>
+                <Image src={Images.github} ImgSize = '35%' ImgSize2 = '25%'/>
               </Skill>
             </SkillContainer>
             <SkillContainer>
               <Skill>
                 <SkillTitle>Knowledgeable</SkillTitle>
                 <Row>
-                  <Image src={Images.python}/>
-                  <Image src={Images.mysql} style={{width : '50%',}}/>
+                  <Image src={Images.python} ImgSize = '35%' ImgSize2 = '25%'/>
+                  <Image src={Images.mysql} ImgSize = '50%' ImgSize2 = '40%'/>
                 </Row>
               </Skill>
               <Skill>
                 <SkillTitle>Certification</SkillTitle>
-                <Image src={Images.Certification} style={{width : '50%',}}/>
+                <Image src={Images.Certification} ImgSize = '50%' ImgSize2 = '40%'/>
               </Skill>
             </SkillContainer>
           </Section>
@@ -75,6 +75,9 @@ const Title = styled.div`
   font-size : 2rem;
   font-weight : 700;
   font-family : 'BalooChettan';
+  @media screen and (max-width : 768px) {
+    font-size : 1.5rem;
+  }
 `;
 const Line = styled.div`
   width : 20%;
@@ -84,10 +87,21 @@ const Line = styled.div`
 const Section = styled.div`
   display : flex;
   justify-content : space-around;
+  @media screen and (max-width : 768px) {
+    flex-direction : column;
+  }
 `;
 const SkillContainer = styled.div`
   width : 30%;
   text-align : center;
+  @media screen and (max-width : 768px) {
+    width : 80%;
+    margin : 0 auto;
+  }
+  @media screen and (max-width : 500px) {
+    width : 90%;
+    margin : 0 auto;
+  }
 `;
 const Skill = styled.div`
   width : 100%;
@@ -97,6 +111,9 @@ const Skill = styled.div`
   border-radius : 1.5rem;
   background-color : ${Colors.white};
   box-shadow: -10px 10px 8px 0 ${Colors.shadow};
+  @media screen and (max-width : 768px) {
+    margin-top : 10%;
+  }
 `;
 const SkillTitle = styled.div`
   margin-bottom : 3%;
@@ -104,10 +121,16 @@ const SkillTitle = styled.div`
   font-weight : 700;
   font-family : 'BalooChettan';
   color : ${Colors.button};
+  @media screen and (max-width : 900px) {
+    font-size : 1.3rem;
+  }
 `;
 const Image = styled.img`
-  width : 35%;
+  width : ${(props) => props.ImgSize};
   margin : 5%;
+  @media screen and (max-width : 768px) {
+    width : ${(props) => props.ImgSize2};
+  }
 `;
 const Row = styled.div`
   width : 70%;
@@ -115,6 +138,9 @@ const Row = styled.div`
   align-items : center;
   justify-content : space-between;
   margin : 0 auto;
+  @media screen and (max-width : 768px) {
+    justify-content : space-around;
+  }
 `;
 
 export default Skills;

@@ -37,6 +37,9 @@ const Button = styled.div`
   border-radius : 50%;
   background-color : ${Colors.white};
   cursor: pointer;
+  @media screen and (max-width : 1000px) {
+    padding : 2%;
+  }
 `;
 
 export default App;
