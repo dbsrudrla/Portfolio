@@ -20,11 +20,11 @@ function Footer() {
 };
 
 const Container = styled.div`
-    width : 100vw;
+    width : 100%;
     display : flex;
     justify-content : center;
     flex-wrap : wrap;
-    background-color : ${Colors.black2};
+    background-color : ${Colors.black};
 `;
 const Wrapper = styled.div`
     width : 50%;
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     flex-wrap : inherit;
 `;
 const List = styled.div`
-    width : 30%;
+    width : 25%;
     margin : auto;
     margin-bottom : 2%;
     display : flex;

@@ -16,7 +16,7 @@ function App() {
   return (
     <Container>
       <Contents />
-      <Button onClick={handleScrollTop}>👆🏻</Button>
+      <Button onClick={handleScrollTop}>{'🔝'}</Button>
     </Container>
   );
 }
@@ -26,18 +26,16 @@ const Container = styled.div`
   display : flex;
   flex-direction : column;
   align-items : center;
-  background-color : ${Colors.Home};
 `;
 const Button = styled.div` 
-  padding : 0.8%;
+  padding : 1%;
   position : fixed;
   bottom : 7%;
   right : 5%;
   font-size : 20px;
-  color : ${Colors.white};
   z-index : 1000;
-  border-radius : 20%;
-  background-color : ${Colors.Button};
+  border-radius : 50%;
+  background-color : ${Colors.white};
   cursor: pointer;
 `;
 
