@@ -38,6 +38,9 @@ const List = styled.div`
     display : flex;
     align-items : center;
     justify-content : space-between;
+    @media screen and (max-width : 768px) {
+        width : 40%;
+    }
 `;
 const Button = styled.div`
     width : 50px;
@@ -50,9 +53,12 @@ const Button = styled.div`
 `;
 const Caption = styled.div`
     text-align : center;
-    font-size : 15px;
+    font-size : 1rem;
     font-family : 'BalooChettan';
     color : ${Colors.white};
+    @media screen and (max-width : 768px) {
+        font-size : 0.95rem;
+    }
 `;
 
 export default Footer;

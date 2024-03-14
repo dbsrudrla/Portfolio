@@ -57,6 +57,9 @@ const Title = styled.div`
   font-size : 2rem;
   font-weight : 700;
   font-family : 'BalooChettan';
+  @media screen and (max-width : 768px) {
+    font-size : 1.5rem;
+  }
 `;
 const Line = styled.div`
   width : 20%;
@@ -66,10 +69,17 @@ const Line = styled.div`
 const Section = styled.div`
   display : flex;
   justify-content : space-around;
+  @media screen and (max-width : 900px) {
+    flex-direction : column;
+  }
 `;
 const CareerContainer = styled.div`
   width : 40%;
   text-align : center;
+  @media screen and (max-width : 900px) {
+    width : 80%;
+    margin : 0 auto;
+  }
 `;
 const Careers = styled.div`
   width : 100%;
@@ -85,18 +95,27 @@ const CareerTitle = styled.div`
   font-size : 1.5rem;
   font-weight : 700;
   font-family : 'BalooChettan';
+  @media screen and (max-width : 768px) {
+    font-size : 1.2rem;
+  }
 `;
 const InfoTitle = styled.div`
   margin-bottom : 5%;
   font-size : 1.1rem;
   font-weight : 700;
   font-family : 'NotoSans';
+  @media screen and (max-width : 768px) {
+    font-size : 1rem;
+  }
 `;
 const Info = styled.div`
   margin-bottom : 5%;
   font-size : 1rem;
   font-weight : 300;
   font-family : 'NotoSans';
+  @media screen and (max-width : 768px) {
+    font-size : 0.95rem;
+  }
 `;
 
 export default Career;

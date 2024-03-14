@@ -100,6 +100,9 @@ const Title = styled.div`
   font-size : 2rem;
   font-weight : 700;
   font-family : 'BalooChettan';
+  @media screen and (max-width : 768px) {
+    font-size : 1.5rem;
+  }
 `;
 const Line = styled.div`
   width : 20%;
@@ -137,6 +140,9 @@ const ProjectTitle = styled.div`
   font-size : 2rem;
   font-weight : 700;
   font-family : 'BalooChettan';
+  @media screen and (max-width : 768px) {
+    font-size : 1.5rem;
+  }
 `;
 const ProjectInfo = styled.div`
   width : 45%;
@@ -147,12 +153,18 @@ const InfoTitle = styled.div`
   font-size : 1.2rem;
   font-weight : 700;
   font-family : 'NotoSans';
+  @media screen and (max-width : 768px) {
+    font-size : 1rem;
+  }
 `;
 const Info = styled.div`
   margin-bottom : 5%;
   font-size : 1.1rem;
   font-weight : 200;
   font-family : 'NotoSans';
+  @media screen and (max-width : 768px) {
+    font-size : 0.95rem;
+  }
 `;
 
 export default Projects;
