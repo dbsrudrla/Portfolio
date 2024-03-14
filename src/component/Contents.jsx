@@ -5,7 +5,7 @@ import Home from "./Home";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import Projects from "./Projects";
-import Career from "./Career";
+import Activities from "./Activities";
 import Footer from "./Footer";
 
 
@@ -20,7 +20,7 @@ function Contents() {
       <ContentsWrapper id="aboutMe"><AboutMe /></ContentsWrapper>
       <ContentsWrapper id="skills" bgColor='#FFEECC'><Skills /></ContentsWrapper>
       <ContentsWrapper id="projects" bgColor='#FFEADD'><Projects /></ContentsWrapper>
-      <ContentsWrapper id="career"><Career /></ContentsWrapper>
+      <ContentsWrapper id="activity"><Activities /></ContentsWrapper>
       <Footer />
     </Container>
   )

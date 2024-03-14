@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Colors from '../common/Color';
 
-function Career() {
+function Activities() {
   return (
     <>
       <Container>
         <Wrapper>
           {/* 제목 */}
           <TitleContainer>
-            <Title>Career</Title>
+            <Title>Activity & Awards</Title>
             <Line/>
           </TitleContainer>
           {/* 내용 */}
@@ -62,9 +62,12 @@ const Title = styled.div`
   }
 `;
 const Line = styled.div`
-  width : 20%;
+  width : 25%;
   margin : 0 auto;
   border-bottom : 2px solid ${Colors.black};
+  @media screen and (max-width : 900px) {
+    width : 35%;
+  }
 `;
 const Section = styled.div`
   display : flex;
@@ -118,4 +121,4 @@ const Info = styled.div`
   }
 `;
 
-export default Career;
+export default Activities;

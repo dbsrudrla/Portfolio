@@ -28,14 +28,14 @@ function Header({isToggleOpen, setIsToggleOpen}) {
                 <NavList><Button href="#aboutMe" className="menu-item">About me</Button></NavList>
                 <NavList><Button href="#skills" className="menu-item">Skills</Button></NavList>
                 <NavList><Button href="#projects" className="menu-item">Projects</Button></NavList>
-                <NavList><Button href="#career" className="menu-item">Career</Button></NavList>
+                <NavList><Button href="#activity" className="menu-item">Activity</Button></NavList>
             </List>
             {isToggleOpen ? (
                 <ColumnList>
                     <NavList><Button href="#aboutMe" className="menu-item">About me</Button></NavList>
                     <NavList><Button href="#skills" className="menu-item">Skills</Button></NavList>
                     <NavList><Button href="#projects" className="menu-item">Projects</Button></NavList>
-                    <NavList><Button href="#career" className="menu-item">Career</Button></NavList>
+                    <NavList><Button href="#activity" className="menu-item">Activity</Button></NavList>
                 </ColumnList>
             ) : null}
         </Wrapper>
