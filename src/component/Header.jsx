@@ -56,7 +56,7 @@ const Container = styled.div`
     flex-wrap : wrap;
     box-shadow : 0 0 7px ${Colors.shadow};
     background-color : ${Colors.white};
-    @media screen and (max-width : 768px) {
+    @media screen and (max-width : 1000px) {
         height : auto;
     }
 `;
@@ -66,7 +66,7 @@ const Wrapper = styled.div`
     flex-wrap : inherit;
     align-items : center;
     justify-content : space-between;
-    @media screen and (max-width : 768px) {
+    @media screen and (max-width : 1000px) {
         width : 100%;
         justify-content : space-around;
     }
@@ -76,7 +76,7 @@ const Title = styled.div`
     font-weight : bold;
     font-size : 1.5rem;
     font-family : 'BalooChettan';
-    @media screen and (max-width : 768px) {
+    @media screen and (max-width : 1000px) {
         padding : 2% 0;
     }
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Colors from '../common/Color';
-import Images from '../common/\bImages';
+import Images from '../common/Images';
 
 function Skills() {
   return (
@@ -121,7 +121,10 @@ const SkillTitle = styled.div`
   font-weight : 700;
   font-family : 'BalooChettan';
   color : ${Colors.button};
-  @media screen and (max-width : 900px) {
+  @media screen and (max-width : 1200px) {
+    font-size : 1.2rem;
+  }
+  @media screen and (max-width : 768px) {
     font-size : 1.3rem;
   }
 `;
