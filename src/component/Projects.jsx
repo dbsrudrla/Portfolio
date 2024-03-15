@@ -46,16 +46,15 @@ function Projects() {
                           <InfoTitle>기간</InfoTitle>
                           <Info>2023.09.04 - 2023.10.10</Info>
                           <InfoTitle>개발 동기</InfoTitle>
-                          <Info>코로나 이후 증가한 재난 문자를 보기 쉬운 형태로</Info>
-                          <Info>전달하기 위해서 시작했습니다.</Info>
+                          <Info>코로나 이후 증가한 재난 문자를 보기 쉬운 형태로 전달하기 위해서 시작했습니다.</Info>
                           <InfoTitle>핵심 기능</InfoTitle>
-                          <Info>지도 위에 실시간 재난 문자 <text style={{color : Colors.button}}>아이콘</text>으로 시각화</Info>
+                          <Info>- 지도 위에 실시간 재난 문자 <text style={{color : Colors.button}}>아이콘</text>으로 시각화</Info>
                           <Info>
-                            재난문자 <text style={{color : Colors.button}}>메뉴얼 </text> 
+                            - 재난문자 <text style={{color : Colors.button}}>메뉴얼 </text> 
                             / <text style={{color : Colors.button}}>재난 문자</text> 내용 확인 / 
                             대피소 <text style={{color : Colors.button}}>길찾기</text>
                           </Info>
-                          <Info>본인 위치 주변 <text style={{color : Colors.button}}>대피소 찾기</text> 기능</Info>
+                          <Info>- 본인 위치 주변 <text style={{color : Colors.button}}>대피소 찾기</text> 기능</Info>
                         </InfoContainer>
                         <InfoContainer>
                           <InfoTitle>역할</InfoTitle>
@@ -99,12 +98,11 @@ function Projects() {
                         <InfoTitle>기간</InfoTitle>
                         <Info>2023.11.27 - 2024.02.02</Info>
                         <InfoTitle>개발 동기</InfoTitle>
-                        <Info>학생들이 간편하게 농구 모임을 만들어서</Info>
-                        <Info>농구를 함께 즐길 수 있도록 하기 위해 개발했습니다.</Info>
+                        <Info>학생들이 간편하게 농구 모임을 만들어서 농구를 함께 즐길 수 있도록 하기 위해 개발했습니다.</Info>
                         <InfoTitle>핵심 기능</InfoTitle>
-                        <Info>간단하게 정보만 입력하면 쉽게 만들 수 있는 <text style={{color : Colors.button}}>농구 파티</text></Info>
-                        <Info>농구 파티에 누구나 <text style={{color : Colors.button}}>쉽게</text> 참여 가능</Info>
-                        <Info><text style={{color : Colors.button}}>용병 시스템</text>을 통한 참여 가능</Info>
+                        <Info>- 간단하게 정보만 입력하면 쉽게 만들 수 있는 <text style={{color : Colors.button}}>농구 파티</text></Info>
+                        <Info>- 농구 파티에 누구나 <text style={{color : Colors.button}}>쉽게</text> 참여 가능</Info>
+                        <Info>- <text style={{color : Colors.button}}>용병 시스템</text>을 통한 참여 가능</Info>
                       </InfoContainer>
                       <InfoContainer>
                         <InfoTitle>역할</InfoTitle>
@@ -136,6 +134,9 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width : 80%;
   margin : 0 auto;
+  @media screen and (max-width : 1000px) {
+    width : 90%;
+  }
 `;
 const TitleContainer = styled.div`
   width : 100%;
@@ -181,7 +182,7 @@ const ProjectContent = styled.div`
 const ProjectWrapper = styled.div`
   display : flex;
   justify-content : space-around;
-  @media screen and (max-width : 768px) {
+  @media screen and (max-width : 900px) {
     display : flex;
     flex-direction : column;
     justify-content : center;
@@ -198,7 +199,7 @@ const Button = styled.a`
   width : 3.5%;
   padding : 1%;
   cursor: pointer;
-  @media screen and (max-width : 768px) {
+  @media screen and (max-width : 900px) {
     width : 5%;
   }
   @media screen and (max-width : 500px) {
@@ -213,7 +214,7 @@ const Project = styled.div`
   display : flex;
   flex-direction : column;
   align-items : center;
-  @media screen and (max-width : 768px) {
+  @media screen and (max-width : 900px) {
     width : 50%
   }
 `;
@@ -228,11 +229,13 @@ const ProjectTitle = styled.div`
 `;
 const Image = styled.img`
   width : 80%;
+  border-radius : 1rem;
+  box-shadow: -10px 10px 8px 0 ${Colors.shadow};
 `;
 const ProjectInfo = styled.div`
   width : 45%;
   text-align : start;
-  @media screen and (max-width : 768px) {
+  @media screen and (max-width : 900px) {
     width : 100%;
     display : flex;
     justify-content : space-around;
@@ -244,7 +247,7 @@ const ProjectInfo = styled.div`
 `;
 const InfoContainer = styled.div`
   width : 100%;
-  @media screen and (max-width : 768px) {
+  @media screen and (max-width : 900px) {
     width : 45%;
     flex-direction : column;
   }

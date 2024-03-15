@@ -121,7 +121,10 @@ const SkillTitle = styled.div`
   font-weight : 700;
   font-family : 'BalooChettan';
   color : ${Colors.button};
-  @media screen and (max-width : 900px) {
+  @media screen and (max-width : 1200px) {
+    font-size : 1.2rem;
+  }
+  @media screen and (max-width : 768px) {
     font-size : 1.3rem;
   }
 `;

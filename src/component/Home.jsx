@@ -50,15 +50,16 @@ const Container = styled.div`
   }
 `;
 const Wrapper = styled.div`
-  width : 100%;
+  width : 80%;
+  margin : 0 auto;
 `;
 const Section = styled.div`
-  width : 80%;
+  width : 100%;
   margin : 0 auto;
   display : flex;
   flex-direction : row;
   justify-content : center;
-  @media screen and (max-width : 1000px) {
+  @media screen and (max-width : 900px) {
     flex-direction : column;
     align-items : center;
   }
@@ -74,16 +75,23 @@ const Image = styled.div`
   };
   cursor : pointer;
   @media screen and (max-width : 1000px) {
-    width : 40%;
+    width : 30%;
     margin-bottom : 5%;
+  }
+  @media screen and (max-width : 768px) {
+    width : 40%;
+  }
+  @media screen and (max-width : 500px) {
+    width : 50%;
   }
 `;
 const TextList = styled.div`
   width : 55%;
   margin-left : 5%;
-  @media screen and (max-width : 1000px) {
+  @media screen and (max-width : 900px) {
     width : 80%;
     text-align : center;
+    margin : 0;
   }
 `;
 const InfoTitle = styled.div`
