@@ -3,11 +3,13 @@ import styled from "styled-components";
 import Colors from '../common/Color';
 import Images from '../common/Images';
 import { WeMapModal, BBModal } from './UI/Modal';
+import { WeMapSwipe, BuzzerBeaterSwipe } from './UI/Swipe';
 
 function Projects() {
 
   const [WeMapmodalOpen, setWeMapModalOpen] = useState(false);
   const [BBmodalOpen, setBBmodalOpen] = useState(false);
+  const [PortfolioOpen, setPortfolioOpen] = useState(false);
 
   return (
     <>
@@ -38,7 +40,7 @@ function Projects() {
                       {/* 프로젝트 사진 */}
                       <Project>
                         <ProjectTitle>WeMap</ProjectTitle>
-                        <Image src={Images.WeMapStart} />
+                        <WeMapSwipe />
                       </Project>
                       {/* 프로젝트 설명 */}
                       <ProjectInfo>
@@ -90,7 +92,7 @@ function Projects() {
                     {/* 프로젝트 사진 */}
                     <Project>
                       <ProjectTitle>Buzzer Beater</ProjectTitle>
-                      <Image src={Images.BBStart} />
+                      <BuzzerBeaterSwipe />
                     </Project>
                     {/* 프로젝트 설명 */}
                     <ProjectInfo>
@@ -116,6 +118,40 @@ function Projects() {
                     </ProjectInfo>
                   </>
                 }
+                </ProjectWrapper>
+              </ProjectContent>
+            </ProjectContatiner>
+            <ProjectContatiner>
+              <ProjectContent>
+                {/* 프로젝트 git 주소 & 아키텍처 */}
+                <ButtonList>
+                  <Button onClick={() => window.open('https://github.com/dbsrudrla/Portfolio')}>
+                    <Icon src={Images.github_button}/>
+                  </Button>
+                </ButtonList>
+                <ProjectWrapper>
+                  {/* 프로젝트 사진 */}
+                  <Project>
+                    <ProjectTitle>Portfolio</ProjectTitle>
+                  </Project>
+                  {/* 프로젝트 설명 */}
+                  <ProjectInfo>
+                    <InfoContainer>
+                      <InfoTitle>기간</InfoTitle>
+                      <Info>2024.01.28 - 2024.03.16</Info>
+                      <InfoTitle>개발 동기</InfoTitle>
+                      <Info>포트폴리오 용도로 사용하기 위해 제작한 웹사이트입니다.</Info>
+                      <InfoTitle>핵심 기능</InfoTitle>
+                      <Info>- <text style={{color : Colors.button}}>프로젝트 이미지</text> swipe</Info>
+                    </InfoContainer>
+                    <InfoContainer>
+                      <InfoTitle>역할</InfoTitle>
+                      <Info>디자인 및 프론트엔드 개발</Info>
+                      <InfoTitle>사용 기술</InfoTitle>
+                      <Info>Frontend : React</Info>
+                      <Info>Backend : X</Info>
+                    </InfoContainer>
+                  </ProjectInfo>
                 </ProjectWrapper>
               </ProjectContent>
             </ProjectContatiner>
@@ -226,11 +262,6 @@ const ProjectTitle = styled.div`
   @media screen and (max-width : 768px) {
     font-size : 1.5rem;
   }
-`;
-const Image = styled.img`
-  width : 80%;
-  border-radius : 1rem;
-  box-shadow: -10px 10px 8px 0 ${Colors.shadow};
 `;
 const ProjectInfo = styled.div`
   width : 45%;
