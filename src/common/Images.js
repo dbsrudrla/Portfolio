@@ -45,6 +45,8 @@ const Images = {
     // etc.
     github_button : require('./Images/github-mark.png'),
     plus : require('./Images/free-icon-zoom-117453.png'),
+    WeMapArchitecture : require('./Images/WeMap.png'),
+    BBArchitecture : require('./Images/BuzzerBeater.png'),
 };
 
 export default Images;
