@@ -56,6 +56,7 @@ const Container = styled.div`
     flex-wrap : wrap;
     box-shadow : 0 0 7px ${Colors.shadow};
     background-color : ${Colors.white};
+    z-index : 9999;
     @media screen and (max-width : 1000px) {
         height : auto;
     }
