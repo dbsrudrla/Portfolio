@@ -41,6 +41,10 @@ const Images = {
     BBNotice : require('./Images/BuzzerBeater/BuzzerBeater_Notice.png'),
     BBClickMerc : require('./Images/BuzzerBeater/BuzzerBeater_Clickmerc.png'),
     BBClickList : require('./Images/BuzzerBeater/BuzzerBeater_Clicklist.png'),
-}
+
+    // etc.
+    github_button : require('./Images/github-mark.png'),
+    plus : require('./Images/free-icon-zoom-117453.png'),
+};
 
 export default Images;
