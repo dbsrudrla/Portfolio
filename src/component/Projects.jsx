@@ -9,7 +9,6 @@ function Projects() {
 
   const [WeMapmodalOpen, setWeMapModalOpen] = useState(false);
   const [BBmodalOpen, setBBmodalOpen] = useState(false);
-  const [PortfolioOpen, setPortfolioOpen] = useState(false);
 
   return (
     <>

@@ -133,4 +133,4 @@ const Image = styled.img`
   box-shadow: -10px 10px 8px 0 ${Colors.shadow};
 `;
 
-export {WeMapSwipe, BuzzerBeaterSwipe};
+export {WeMapSwipe, BuzzerBeaterSwipe, PortfolioSwipe};

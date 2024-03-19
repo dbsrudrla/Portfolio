@@ -55,7 +55,6 @@ const Wrapper = styled.div`
 `;
 const Section = styled.div`
   width : 100%;
-  margin : 0 auto;
   display : flex;
   flex-direction : row;
   justify-content : center;
