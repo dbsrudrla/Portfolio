@@ -66,22 +66,22 @@ function BuzzerBeaterSwipe () {
                 "--swiper-navigation-color": "#FF986C",
             }}
             >
-            <SwiperSlide><Image src={Images.BBStart}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBLogin}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBSignup}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBHome}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBCreate}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBList}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBMerc}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBMypage}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBNickname}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBPassword}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBPhysical}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBCheck}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBPosition}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBNotice}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBClickMerc}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBClickList}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBStart}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBLogin}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBSignup}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBHome}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBCreate}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBList}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBMerc}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBMypage}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBNickname}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBPassword}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBPhysical}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBCheck}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBPosition}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBNotice}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBClickMerc}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.BBClickList}/></SwiperSlide>
             </Swiper>
         </>
     )
@@ -105,23 +105,14 @@ function PortfolioSwipe () {
                 "--swiper-navigation-sides-offset" : "-50px",
                 "--swiper-navigation-color": "#FF986C",
             }}
+            className='Portfolio'
             >
-            <SwiperSlide><Image src={Images.BBStart}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBLogin}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBSignup}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBHome}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBCreate}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBList}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBMerc}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBMypage}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBNickname}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBPassword}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBPhysical}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBCheck}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBPosition}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBNotice}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBClickMerc}/></SwiperSlide>
-            <SwiperSlide><Image src={Images.BBClickList}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.PortfolioStart}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.PortfolioID}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.PortfolioSkill}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.PortfolioProject}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.PortfolioArchitect}/></SwiperSlide>
+                <SwiperSlide><Image src={Images.PortfolioActivity}/></SwiperSlide>
             </Swiper>
         </>
     )

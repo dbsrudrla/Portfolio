@@ -17,6 +17,20 @@ body {
   width: 200px;
 }
 
+.Portfolio {
+  width: 450px;
+}
+@media screen and (max-width:900px) { 
+  .Portfolio {
+    width : 400px;
+  }
+ }
+@media screen and (max-width:500px) { 
+  .Portfolio {
+    width : 300px;
+  }
+ }
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;

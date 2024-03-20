@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Colors from '../common/Color';
 import Images from '../common/Images';
 import { WeMapModal, BBModal } from './UI/Modal';
-import { WeMapSwipe, BuzzerBeaterSwipe } from './UI/Swipe';
+import { WeMapSwipe, BuzzerBeaterSwipe, PortfolioSwipe } from './UI/Swipe';
 
 function Projects() {
 
@@ -128,13 +128,14 @@ function Projects() {
                     <Icon src={Images.github_button}/>
                   </Button>
                 </ButtonList>
-                <ProjectWrapper>
+                <PortfolioProjectWrapper>
                   {/* 프로젝트 사진 */}
-                  <Project>
-                    <ProjectTitle>Portfolio</ProjectTitle>
-                  </Project>
+                  <PortfolioProject>
+                    <PortfolioProjectTitle>Portfolio</PortfolioProjectTitle>
+                    <PortfolioSwipe />
+                  </PortfolioProject>
                   {/* 프로젝트 설명 */}
-                  <ProjectInfo>
+                  <PortfolioProjectInfo>
                     <InfoContainer>
                       <InfoTitle>기간</InfoTitle>
                       <Info>2024.01.28 - 2024.03.16</Info>
@@ -142,6 +143,7 @@ function Projects() {
                       <Info>포트폴리오 용도로 사용하기 위해 제작한 웹사이트입니다.</Info>
                       <InfoTitle>핵심 기능</InfoTitle>
                       <Info>- <text style={{color : Colors.button}}>프로젝트 이미지</text> swipe</Info>
+                      <Info>- <text style={{color : Colors.button}}>그룹 프로젝트</text> 정보들</Info>
                     </InfoContainer>
                     <InfoContainer>
                       <InfoTitle>역할</InfoTitle>
@@ -150,8 +152,8 @@ function Projects() {
                       <Info>Frontend : React</Info>
                       <Info>Backend : X</Info>
                     </InfoContainer>
-                  </ProjectInfo>
-                </ProjectWrapper>
+                  </PortfolioProjectInfo>
+                </PortfolioProjectWrapper>
               </ProjectContent>
             </ProjectContatiner>
           </Section>
@@ -224,6 +226,12 @@ const ProjectWrapper = styled.div`
     align-items : center;
   }
 `;
+const PortfolioProjectWrapper = styled.div`
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+`;
 const ButtonList = styled.div`
   width : 105%;
   margin-bottom : 3%;
@@ -245,7 +253,7 @@ const Icon = styled.img`
   width : 100%;
 `;
 const Project = styled.div`
-  width : 30%;
+  width : 40%;
   display : flex;
   flex-direction : column;
   align-items : center;
@@ -253,8 +261,23 @@ const Project = styled.div`
     width : 50%
   }
 `;
+const PortfolioProject = styled.div`
+  width : 100%;
+  display : flex;
+  flex-direction : column;
+  align-items : center;
+`;
 const ProjectTitle = styled.div`
   margin-bottom : 10%;
+  font-size : 2rem;
+  font-weight : 700;
+  font-family : 'BalooChettan';
+  @media screen and (max-width : 768px) {
+    font-size : 1.5rem;
+  }
+`;
+const PortfolioProjectTitle = styled.div`
+  margin-bottom : 3%;
   font-size : 2rem;
   font-weight : 700;
   font-family : 'BalooChettan';
@@ -270,6 +293,20 @@ const ProjectInfo = styled.div`
     display : flex;
     justify-content : space-around;
     margin : 5% auto;
+  }
+  @media screen and (max-width : 500px) {
+    flex-direction : column;
+  }
+`;
+const PortfolioProjectInfo = styled.div`
+  width : 90%;
+  text-align : start;
+  margin : 5% auto;
+  display : flex;
+  @media screen and (max-width : 900px) {
+    width : 100%;
+    display : flex;
+    justify-content : space-around;
   }
   @media screen and (max-width : 500px) {
     flex-direction : column;

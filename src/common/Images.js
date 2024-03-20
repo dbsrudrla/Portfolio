@@ -42,6 +42,14 @@ const Images = {
     BBClickMerc : require('./Images/BuzzerBeater/BuzzerBeater_Clickmerc.png'),
     BBClickList : require('./Images/BuzzerBeater/BuzzerBeater_Clicklist.png'),
 
+    // Portfolio
+    PortfolioStart : require('./Images/Portfolio/Portfolio_Start.png'),
+    PortfolioID : require('./Images/Portfolio/Portfolio_ID.png'),
+    PortfolioSkill : require('./Images/Portfolio/Portfolio_Skills.png'),
+    PortfolioProject : require('./Images/Portfolio/Portfolio_Project1.png'),
+    PortfolioArchitect : require('./Images/Portfolio/Portfolio_Project2.png'),
+    PortfolioActivity : require('./Images/Portfolio/Portfolio_Activity.png'),
+
     // etc
     profile : require('./Images/profile.JPG'),
     github_button : require('./Images/github-mark.png'),
