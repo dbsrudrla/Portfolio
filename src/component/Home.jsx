@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Colors from '../common/Color';
+import profile from '../common/Images/profile.JPG';
 
 function Home() {
 
@@ -12,11 +13,11 @@ function Home() {
   return (
     <>
       <Container>
+        <img src={profile} />
         <Wrapper>
           <Section>
-            <Image></Image>
             <TextList>
-              <InfoTitle><Text>꾸미기</Text>와 <Text>꼼꼼함</Text>을 좋아하는</InfoTitle>
+              <InfoTitle><Text>디자인</Text>과 <Text>꼼꼼함</Text>을 좋아하는</InfoTitle>
               <InfoTitle>
                 주니어 개발자 <Text style={{color : Colors.button,}}>김윤경</Text>입니다.
               </InfoTitle>
@@ -48,6 +49,10 @@ const Container = styled.div`
   @media screen and (max-width : 768px) {
     padding-top : 20%;
   }
+  img {
+    width : 100%;
+    object-fit : fill;
+  }
 `;
 const Wrapper = styled.div`
   width : 80%;
@@ -64,15 +69,6 @@ const Section = styled.div`
   }
 `;
 const Image = styled.div`
-  width : 20%;
-  height : 230px;
-  border-radius : 10%;
-  box-shadow: -5px 5px 10px ${Colors.shadow};
-  background-color : ${Colors.white};
-  &:hover {
-    transform: translateY(-15px);
-  };
-  cursor : pointer;
   @media screen and (max-width : 1000px) {
     width : 30%;
     margin-bottom : 5%;

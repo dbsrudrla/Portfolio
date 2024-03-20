@@ -42,7 +42,8 @@ const Images = {
     BBClickMerc : require('./Images/BuzzerBeater/BuzzerBeater_Clickmerc.png'),
     BBClickList : require('./Images/BuzzerBeater/BuzzerBeater_Clicklist.png'),
 
-    // etc.
+    // etc
+    profile : require('./Images/profile.JPG'),
     github_button : require('./Images/github-mark.png'),
     plus : require('./Images/free-icon-zoom-117453.png'),
     WeMapArchitecture : require('./Images/WeMap.png'),

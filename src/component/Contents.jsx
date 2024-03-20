@@ -8,7 +8,6 @@ import Projects from "./Projects";
 import Activities from "./Activities";
 import Footer from "./Footer";
 
-
 function Contents() {
   // 반응형 웹 헤더
   const [isToggleOpen, setIsToggleOpen] = useState(false);
