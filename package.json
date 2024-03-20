@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://dbsrudrla.github.io/Yun's_Portfolio/",
+  "homepage": "https://dbsrudrla.github.io/Portfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
