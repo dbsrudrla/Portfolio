@@ -13,13 +13,13 @@ function Home() {
   return (
     <>
       <Container>
-        <img src={profile} />
+      <img src={profile} />
         <Wrapper>
           <Section>
             <TextList>
               <InfoTitle><Text>디자인</Text>과 <Text>꼼꼼함</Text>을 좋아하는</InfoTitle>
               <InfoTitle>
-                주니어 개발자 <Text style={{color : Colors.button,}}>김윤경</Text>입니다.
+                주니어 개발자 <Text style={{color : Colors.button, fontWeight : 700,}}>김윤경</Text>입니다.
               </InfoTitle>
               <Info style={{marginTop : '5%',}}>
                 프론트엔드 개발자를 꿈꾸고 있습니다.
@@ -44,64 +44,69 @@ function Home() {
 const Container = styled.div`
   width : 100%;
   box-sizing : border-box;
-  padding-top : 170px;
-  padding-bottom : 5%;
-  @media screen and (max-width : 768px) {
-    padding-top : 20%;
-  }
   img {
     width : 100%;
-    object-fit : fill;
+    height : 680px;
+    margin-top : 5%;
+    object-fit : cover;
   }
 `;
 const Wrapper = styled.div`
   width : 80%;
-  margin : 0 auto;
-`;
-const Section = styled.div`
-  width : 100%;
-  display : flex;
-  flex-direction : row;
-  justify-content : center;
-  @media screen and (max-width : 900px) {
-    flex-direction : column;
-    align-items : center;
-  }
-`;
-const Image = styled.div`
+  margin : 0 3%;
+  position : absolute;
+  top : 45%;
   @media screen and (max-width : 1000px) {
-    width : 30%;
-    margin-bottom : 5%;
+    top : 55%;
   }
   @media screen and (max-width : 768px) {
-    width : 40%;
+    top : 50%;
   }
   @media screen and (max-width : 500px) {
-    width : 50%;
+    top : 12%;
+  }
+`;
+const Section = styled.div`
+  width : 50%;
+  display : flex;
+  justify-content : center;
+  @media screen and (max-width : 1000px) {
+    width : 55%;
+  }
+  @media screen and (max-width : 768px) {
+    width : 70%;
+  }
+  @media screen and (max-width : 500px) {
+    width : 100%;
+    justify-content : flex-start;
   }
 `;
 const TextList = styled.div`
-  width : 55%;
-  margin-left : 5%;
-  @media screen and (max-width : 900px) {
-    width : 80%;
-    text-align : center;
-    margin : 0;
-  }
+  width : 100%;
+  padding : 6%;
+  border-radius : 1rem;
 `;
 const InfoTitle = styled.div`
   margin-bottom : 3%;
   font-size : 1.8rem;
   font-weight : 600;
   font-family : 'NotoSans';
-  @media screen and (max-width : 768px) {
-    font-size : 1.3rem;
+  color : ${Colors.white};
+  @media screen and (max-width : 1000px) {
+    font-size : 1.5rem;
+  }
+  @media screen and (max-width : 500px) {
+    font-size : 0.9rem;
   }
 `;
 const Text = styled.text`
   font-size : 2.2rem;
-  @media screen and (max-width : 768px) {
+  color : ${Colors.white};
+  @media screen and (max-width : 1000px) {
     font-size : 1.8rem;
+  }
+  @media screen and (max-width : 500px) {
+    font-size : 1.1rem;
   }
 `;
 const Info = styled.div`
@@ -109,16 +114,20 @@ const Info = styled.div`
   font-size : 1.2rem;
   font-weight : 300;
   font-family : 'NotoSans';
-  @media screen and (max-width : 768px) {
-    font-size : 0.95rem;
+  color : ${Colors.white};
+  @media screen and (max-width : 1000px) {
+    font-size : 1rem;
+  }
+  @media screen and (max-width : 500px) {
+    font-size : 0.8rem;
   }
 `;
 const Button = styled.div`
-  width : 10%;
+  width : 20%;
   margin : 2%;
-  padding : 1% 0;
+  padding : 2.2% 0;
   border-radius : 2rem;
-  border : 2px dashed ${Colors.button};
+  background-color : ${Colors.button};
   text-align : center;
   font-size : 1.2rem;
   font-weight : 700;
@@ -127,10 +136,15 @@ const Button = styled.div`
     background-color : ${Colors.button};
   };
   cursor : pointer;
-  @media screen and (max-width : 768px) {
+  @media screen and (max-width : 1000px) {
     font-size : 1rem;
-    padding : 1% 2%;
-    margin : 5%;
+    padding : 3% 2%;
+  }
+  @media screen and (max-width : 768px) {
+    font-size : 0.95rem;
+  }
+  @media screen and (max-width : 500px) {
+    margin : 0 5%;
   }
 `;
 
