@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://dbsrudrla.github.io/Yun's Portfolio/",
+  "homepage": "https://dbsrudrla.github.io/Yun'sPortfolio/",
   "eslintConfig": {
     "extends": [
       "react-app",
