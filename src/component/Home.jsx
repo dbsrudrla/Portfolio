@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <Container>
-      <img src={profile} />
+      <Image src={profile} />
         <Wrapper>
           <Section>
             <TextList>
@@ -50,6 +50,9 @@ const Container = styled.div`
     margin-top : 5%;
     object-fit : cover;
   }
+`;
+const Image = styled.img`
+  width : 100%;
 `;
 const Wrapper = styled.div`
   width : 80%;
