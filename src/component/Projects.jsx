@@ -66,6 +66,8 @@ function Projects() {
                           <Info>Backend : DRF, AWS Lambda</Info>
                           <Info>etc. : KakaoMap, Kakao mobility, 통계지리 API</Info>
                           <Info>세종시 대피소 데이터, 재난 관리 포털 크롤링</Info>
+                          <InfoTitle>배포 주소</InfoTitle>
+                      <Info style={{cursor : 'pointer',}} onClick={() => window.open('https://gyural.github.io/WeMap-Frontend/')}>https://gyural.github.io/WeMap-Frontend/</Info>
                         </InfoContainer>
                       </ProjectInfo>
                     </>
@@ -152,6 +154,8 @@ function Projects() {
                       <InfoTitle>사용 기술</InfoTitle>
                       <Info>Frontend : React</Info>
                       <Info>Backend : X</Info>
+                      <InfoTitle>배포 주소</InfoTitle>
+                      <Info style={{cursor : 'pointer',}} onClick={() => window.open('https://dbsrudrla.github.io/Portfolio/')}>https://dbsrudrla.github.io/Portfolio/</Info>
                     </PortfolioInfoContainer>
                   </PortfolioProjectInfo>
                 </PortfolioProjectWrapper>
