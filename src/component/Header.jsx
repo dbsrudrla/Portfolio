@@ -32,7 +32,7 @@ function Header({isToggleOpen, setIsToggleOpen}) {
             </List>
             {isToggleOpen ? (
                 <ColumnList>
-                    <NavList><Button href="#aboutMe" className="menu-item">About me</Button></NavList>
+                    <NavList style={{marginTop : '3%',}}><Button href="#aboutMe" className="menu-item">About me</Button></NavList>
                     <NavList><Button href="#skills" className="menu-item">Skills</Button></NavList>
                     <NavList><Button href="#projects" className="menu-item">Projects</Button></NavList>
                     <NavList><Button href="#activity" className="menu-item">Activity</Button></NavList>

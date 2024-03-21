@@ -16,6 +16,16 @@ body {
 .swiper {
   width: 200px;
 }
+@media screen and (max-width:900px) { 
+  .swiper {
+    width : 150px;
+  }
+}
+@media screen and (max-width:400px) { 
+  .swiper {
+    width : 100px;
+  }
+}
 
 .Portfolio {
   width: 450px;
@@ -24,12 +34,22 @@ body {
   .Portfolio {
     width : 400px;
   }
- }
-@media screen and (max-width:500px) { 
+}
+@media screen and (max-width:768px) { 
   .Portfolio {
-    width : 300px;
+    width : 280px;
   }
- }
+}
+@media screen and (max-width:400px) { 
+  .Portfolio {
+    width : 200px;
+  }
+}
+@media screen and (max-width:360px) { 
+  .Portfolio {
+    width : 180px;
+  }
+}
 
 .swiper-slide {
     text-align: center;
