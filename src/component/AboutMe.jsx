@@ -71,9 +71,15 @@ const Title = styled.div`
   }
 `;
 const Line = styled.div`
-  width : 20%;
+  width : 15%;
   margin : 0 auto;
   border-bottom : 2px solid ${Colors.black};
+  @media screen and (max-width : 900px) {
+    width : 25%;
+  }
+  @media screen and (max-width : 400px) {
+    width : 45%;
+  }
 `;
 const TextList = styled.div`
   width : 63%;

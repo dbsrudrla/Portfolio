@@ -73,6 +73,9 @@ const Line = styled.div`
   @media screen and (max-width : 900px) {
     width : 35%;
   }
+  @media screen and (max-width : 400px) {
+    width : 60%;
+  }
 `;
 const Section = styled.div`
   display : flex;

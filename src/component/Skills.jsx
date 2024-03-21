@@ -80,9 +80,15 @@ const Title = styled.div`
   }
 `;
 const Line = styled.div`
-  width : 20%;
+  width : 15%;
   margin : 0 auto;
   border-bottom : 2px solid ${Colors.black};
+  @media screen and (max-width : 900px) {
+    width : 20%;
+  }
+  @media screen and (max-width : 400px) {
+    width : 35%;
+  }
 `;
 const Section = styled.div`
   display : flex;
