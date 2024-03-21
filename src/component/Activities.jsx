@@ -106,6 +106,9 @@ const CareerTitle = styled.div`
   @media screen and (max-width : 768px) {
     font-size : 1.3rem;
   }
+  @media screen and (max-width : 400px) {
+    font-size : 1.1rem;
+  }
 `;
 const InfoTitle = styled.div`
   margin-bottom : 5%;
@@ -115,6 +118,9 @@ const InfoTitle = styled.div`
   @media screen and (max-width : 768px) {
     font-size : 1rem;
   }
+  @media screen and (max-width : 400px) {
+    font-size : 0.9rem;
+  }
 `;
 const Info = styled.div`
   margin-bottom : 5%;
@@ -123,6 +129,9 @@ const Info = styled.div`
   font-family : 'NotoSans';
   @media screen and (max-width : 768px) {
     font-size : 0.95rem;
+  }
+  @media screen and (max-width : 400px) {
+    font-size : 0.8rem;
   }
 `;
 

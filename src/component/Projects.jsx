@@ -136,7 +136,7 @@ function Projects() {
                   </PortfolioProject>
                   {/* 프로젝트 설명 */}
                   <PortfolioProjectInfo>
-                    <InfoContainer>
+                    <PortfolioInfoContainer>
                       <InfoTitle>기간</InfoTitle>
                       <Info>2024.01.28 - 2024.03.16</Info>
                       <InfoTitle>개발 동기</InfoTitle>
@@ -144,14 +144,15 @@ function Projects() {
                       <InfoTitle>핵심 기능</InfoTitle>
                       <Info>- <text style={{color : Colors.button}}>프로젝트 이미지</text> swipe</Info>
                       <Info>- <text style={{color : Colors.button}}>그룹 프로젝트</text> 정보들</Info>
-                    </InfoContainer>
-                    <InfoContainer>
+                      <Info>- <text style={{color : Colors.button}}>반응형</text> 웹사이트</Info>
+                    </PortfolioInfoContainer>
+                    <PortfolioInfoContainer>
                       <InfoTitle>역할</InfoTitle>
                       <Info>디자인 및 프론트엔드 개발</Info>
                       <InfoTitle>사용 기술</InfoTitle>
                       <Info>Frontend : React</Info>
                       <Info>Backend : X</Info>
-                    </InfoContainer>
+                    </PortfolioInfoContainer>
                   </PortfolioProjectInfo>
                 </PortfolioProjectWrapper>
               </ProjectContent>
@@ -299,23 +300,29 @@ const ProjectInfo = styled.div`
   }
 `;
 const PortfolioProjectInfo = styled.div`
-  width : 90%;
+  width : 100%;
   text-align : start;
-  margin : 5% auto;
   display : flex;
-  @media screen and (max-width : 900px) {
-    width : 100%;
-    display : flex;
-    justify-content : space-around;
-  }
+  justify-content : space-around;
+  margin : 5% auto;
   @media screen and (max-width : 500px) {
     flex-direction : column;
+    margin-top : 8%;
   }
 `;
 const InfoContainer = styled.div`
   width : 100%;
   @media screen and (max-width : 900px) {
     width : 45%;
+    flex-direction : column;
+  }
+  @media screen and (max-width : 500px) {
+    width : 100%;
+  }
+`;
+const PortfolioInfoContainer = styled.div`
+  width : 45%;
+  @media screen and (max-width : 900px) {
     flex-direction : column;
   }
   @media screen and (max-width : 500px) {

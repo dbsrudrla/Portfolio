@@ -17,15 +17,14 @@ function WeMapSwipe () {
         <>
             <Swiper
                 autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
+                    delay: 3000,
+                    disableOnInteraction: false,
                 }}
                 loop={true}
                 effect={'flip'}
                 grabCursor={true}
                 navigation={true}
                 modules={[Autoplay, EffectFlip, Navigation]}
-                width={200}
                 style={{
                 "--swiper-navigation-size" : "30px",
                 "--swiper-navigation-sides-offset" : "-50px",

@@ -40,6 +40,9 @@ const Button = styled.div`
   @media screen and (max-width : 1000px) {
     padding : 2%;
   }
+  @media screen and (max-width : 500px) {
+    padding : 3%;
+  }
 `;
 
 export default App;
