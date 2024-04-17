@@ -63,6 +63,9 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width : 75%;
   margin : 0 auto;
+  @media screen and (max-width : 500px) {
+    width : 95%;
+  }
 `;
 const TitleContainer = styled.div`
   width : 100%;

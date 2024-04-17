@@ -60,6 +60,9 @@ const Wrapper = styled.div`
   position : absolute;
   top : 15%;
   left : 5%;
+  @media screen and (max-width : 500px) {
+    left : 0;
+  }
 `;
 const Section = styled.div`
   width : 45%;

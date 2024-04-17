@@ -50,6 +50,9 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width : 80%;
   margin : 0 auto;
+  @media screen and (max-width : 500px) {
+    width : 95%;
+  }
 `;
 const TitleContainer = styled.div`
   width : 100%;
@@ -73,8 +76,8 @@ const Line = styled.div`
   @media screen and (max-width : 900px) {
     width : 35%;
   }
-  @media screen and (max-width : 400px) {
-    width : 60%;
+  @media screen and (max-width : 500px) {
+    width : 50%;
   }
 `;
 const Section = styled.div`

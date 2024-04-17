@@ -30,6 +30,9 @@ const Wrapper = styled.div`
     width : 50%;
     margin : 1% 0;
     flex-wrap : inherit;
+    @media screen and (max-width : 768px) {
+        width : 70%;
+    }
 `;
 const List = styled.div`
     width : 25%;

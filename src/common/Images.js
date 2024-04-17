@@ -43,7 +43,6 @@ const Images = {
     BBClickList : require('./Images/BuzzerBeater/BuzzerBeater_Clicklist.png'),
 
     // Portfolio
-    PortfolioStart : require('./Images/Portfolio/Portfolio_Start.png'),
     PortfolioID : require('./Images/Portfolio/Portfolio_ID.png'),
     PortfolioSkill : require('./Images/Portfolio/Portfolio_Skills.png'),
     PortfolioProject : require('./Images/Portfolio/Portfolio_Project1.png'),

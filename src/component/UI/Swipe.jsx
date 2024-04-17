@@ -106,7 +106,6 @@ function PortfolioSwipe () {
             }}
             className='Portfolio'
             >
-                <SwiperSlide><Image src={Images.PortfolioStart}/></SwiperSlide>
                 <SwiperSlide><Image src={Images.PortfolioID}/></SwiperSlide>
                 <SwiperSlide><Image src={Images.PortfolioSkill}/></SwiperSlide>
                 <SwiperSlide><Image src={Images.PortfolioProject}/></SwiperSlide>
