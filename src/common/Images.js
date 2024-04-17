@@ -51,7 +51,7 @@ const Images = {
     PortfolioActivity : require('./Images/Portfolio/Portfolio_Activity.png'),
 
     // etc
-    profile : require('./Images/profile.JPG'),
+    profile : require('./Images/Profile_Image.JPG'),
     github_button : require('./Images/github-mark.png'),
     plus : require('./Images/free-icon-zoom-117453.png'),
     WeMapArchitecture : require('./Images/WeMap.png'),

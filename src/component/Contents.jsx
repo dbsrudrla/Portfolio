@@ -15,7 +15,7 @@ function Contents() {
   return (
     <Container>
       <Header isToggleOpen={isToggleOpen} setIsToggleOpen={setIsToggleOpen}/>
-      <ContentsWrapper id="home" bgColor='#FFF3DA'><Home /></ContentsWrapper>
+      <ContentsWrapper id="home" bgColor='#222222'><Home /></ContentsWrapper>
       <ContentsWrapper id="aboutMe"><AboutMe /></ContentsWrapper>
       <ContentsWrapper id="skills" bgColor='#FFEECC'><Skills /></ContentsWrapper>
       <ContentsWrapper id="projects" bgColor='#FFEADD'><Projects /></ContentsWrapper>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Colors from '../common/Color';
-import profile from '../common/Images/profile.JPG';
+import Images from '../common/Images';
 
 function Home() {
 
@@ -13,13 +13,13 @@ function Home() {
   return (
     <>
       <Container>
-      <Image src={profile} />
+      <Image src={Images.profile} />
         <Wrapper>
           <Section>
             <TextList>
-              <InfoTitle><Text>디자인</Text>과 <Text>꼼꼼함</Text>을 좋아하는</InfoTitle>
+              <InfoTitle>꼼꼼하고 성실한</InfoTitle>
               <InfoTitle>
-                주니어 개발자 <Text style={{color : Colors.button, fontWeight : 700,}}>김윤경</Text>입니다.
+                주니어 개발자 <text style={{color : Colors.button}}>김윤경</text>입니다.
               </InfoTitle>
               <Info style={{marginTop : '5%',}}>
                 프론트엔드 개발자를 꿈꾸고 있습니다.
@@ -28,13 +28,13 @@ function Home() {
                 웹뿐만 아니라 UX / UI 앱 디자인 경험이 있습니다.
               </Info>
               <Info>
-                성실하고, 행복하게 일에 임하는 것이 저의 가장 큰 장점입니다.
+                행복하게 일에 임하는 것이 저의 가장 큰 장점입니다.
               </Info>
             </TextList>
           </Section>
           <Section>
             <Button onClick={MoreButton}>MORE</Button>
-          </Section>  
+          </Section>
         </Wrapper>
       </Container>
     </>
@@ -46,33 +46,24 @@ const Container = styled.div`
   box-sizing : border-box;
   img {
     width : 100%;
-    height : 680px;
-    margin-top : 5%;
+    height : 700px;
     object-fit : cover;
   }
 `;
 const Image = styled.img`
   width : 100%;
+  opacity : 0.5;
 `;
 const Wrapper = styled.div`
   width : 80%;
   margin : 0 3%;
   position : absolute;
-  top : 45%;
-  @media screen and (max-width : 1000px) {
-    top : 55%;
-  }
-  @media screen and (max-width : 768px) {
-    top : 50%;
-  }
-  @media screen and (max-width : 500px) {
-    top : 12%;
-  }
+  top : 15%;
+  left : 5%;
 `;
 const Section = styled.div`
-  width : 50%;
-  display : flex;
-  justify-content : center;
+  width : 45%;
+  border-radius : 2rem;
   @media screen and (max-width : 1000px) {
     width : 55%;
   }
@@ -81,35 +72,23 @@ const Section = styled.div`
   }
   @media screen and (max-width : 500px) {
     width : 100%;
-    justify-content : flex-start;
   }
 `;
 const TextList = styled.div`
   width : 100%;
   padding : 6%;
-  border-radius : 1rem;
 `;
 const InfoTitle = styled.div`
   margin-bottom : 3%;
-  font-size : 1.8rem;
+  font-size : 2.2rem;
   font-weight : 600;
   font-family : 'NotoSans';
-  color : ${Colors.white};
-  @media screen and (max-width : 1000px) {
-    font-size : 1.5rem;
-  }
-  @media screen and (max-width : 500px) {
-    font-size : 0.9rem;
-  }
-`;
-const Text = styled.text`
-  font-size : 2.2rem;
   color : ${Colors.white};
   @media screen and (max-width : 1000px) {
     font-size : 1.8rem;
   }
   @media screen and (max-width : 500px) {
-    font-size : 1.1rem;
+    font-size : 1.3rem;
   }
 `;
 const Info = styled.div`
@@ -122,12 +101,12 @@ const Info = styled.div`
     font-size : 1rem;
   }
   @media screen and (max-width : 500px) {
-    font-size : 0.8rem;
+    font-size : 0.9rem;
   }
 `;
 const Button = styled.div`
   width : 20%;
-  margin : 2%;
+  margin : 0 5%;
   padding : 2.2% 0;
   border-radius : 2rem;
   background-color : ${Colors.button};
@@ -145,9 +124,6 @@ const Button = styled.div`
   }
   @media screen and (max-width : 768px) {
     font-size : 0.95rem;
-  }
-  @media screen and (max-width : 500px) {
-    margin : 0 5%;
   }
 `;
 
