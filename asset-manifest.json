@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.37122613.css",
-    "main.js": "/Portfolio/static/js/main.fdfee77d.js",
+    "main.js": "/Portfolio/static/js/main.3058d5d6.js",
     "static/media/NotoSansKR-VariableFont_wght.woff": "/Portfolio/static/media/NotoSansKR-VariableFont_wght.33752a94ca5252213de8.woff",
     "static/media/Profile_Image.JPG": "/Portfolio/static/media/Profile_Image.38e37c3562e7ed5eba9f.JPG",
-    "static/media/Portfolio_Start.png": "/Portfolio/static/media/Portfolio_Start.0b29d43c7de3347680b3.png",
     "static/media/BuzzerBeater_Start.png": "/Portfolio/static/media/BuzzerBeater_Start.0f04969bf0fb4b97b0c4.png",
     "static/media/python.png": "/Portfolio/static/media/python.0be95369997bc20103a1.png",
     "static/media/BalooChettan2-VariableFont.woff": "/Portfolio/static/media/BalooChettan2-VariableFont.4022014a260cd4759b9d.woff",
@@ -51,10 +50,10 @@
     "static/media/figma.png": "/Portfolio/static/media/figma.9e633e5c84278817ac18.png",
     "index.html": "/Portfolio/index.html",
     "main.37122613.css.map": "/Portfolio/static/css/main.37122613.css.map",
-    "main.fdfee77d.js.map": "/Portfolio/static/js/main.fdfee77d.js.map"
+    "main.3058d5d6.js.map": "/Portfolio/static/js/main.3058d5d6.js.map"
   },
   "entrypoints": [
     "static/css/main.37122613.css",
-    "static/js/main.fdfee77d.js"
+    "static/js/main.3058d5d6.js"
   ]
 }
